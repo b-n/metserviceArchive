@@ -8,7 +8,7 @@ if (!fs.existsSync('images')) {
 
 var timeFormat = {
     input: 'h:mma dddd D MMM YYYY',
-    output: 'YYYY-MM-DDThh:mm:ss'
+    output: 'YYYY-MM-DDTHH:mm:ss'
 };
 
 function callout(options, callback) {
@@ -31,7 +31,7 @@ function callout(options, callback) {
 
 callout(
     {
-        path: '/publicData/rainRadarAuckland_2h_7min_300K',
+        path: '/publicData/rainRadarNZ_2h_7min_300K',
         encoding: 'utf-8'
     },
     function(data) {
